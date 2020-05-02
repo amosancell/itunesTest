@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+    padding: 10px;
+    background: lightskyblue;
+}
+
+#output {
+    display:none;
+    /*border: 1px solid black;*/
+}
+
+tr, td {
+    border: 1px solid black;
+}
+
+button {
+    background: yellow;
+    color: black;
+}

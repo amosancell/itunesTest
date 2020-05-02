@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iTunes</title>
+    <link href="styes.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <label>Artist Name:
+        <input type='text' id='artist'>
+    </label>
+    <label>Number of Results:
+        <input type='text' id='numResults'>
+    </label>
+    <button onclick="run()" id="goBtn">GO!</button>
+
+    <p id="loadingMessage"></p>
+    <p id="errorMessage"></p>
+    <table id="output"></table>
+
+</body>
+</html>
