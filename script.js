@@ -36,7 +36,7 @@ function run() {
     document.getElementById("errorMessage").innerHTML = "";
 
     $.ajax({
-        url: 'http://itunes.apple.com/search?term=' + artist + "&limit=" + numResults,
+        url: 'https://itunes.apple.com/search?term=' + artist + "&limit=" + numResults,
         jsonp: "callback",
         dataType: "jsonp",
         success: process
