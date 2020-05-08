@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>iTunes</title>
     <link href="styes.css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-
+    <div>
     <label>Artist Name:
         <input type='text' id='artist'>
     </label>
     <label>Number of Results:
         <input type='text' id='numResults'>
     </label>
-    <button onclick="run()" id="goBtn">GO!</button>
+    <button onclick="run()" id="goBtn">GO!</button></div>
+    <div id='advanced-wrapper' style="display: none;"></div>
+    <br><button class='advancedBtn' onclick="showAdvanced()">Advanced Parameters</button>
 
     <p id="loadingMessage"></p>
     <p id="errorMessage"></p>

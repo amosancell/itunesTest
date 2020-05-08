@@ -1,12 +1,29 @@
 * {
     font-family: sans-serif;
     padding: 10px;
-    background: lightskyblue;
+    /*background-color: lightskyblue;*/
+}
+
+body {
+    background-color: lightskyblue;
 }
 
 #output {
     display:none;
-    /*border: 1px solid black;*/
+    border-collapse: collapse;
+}
+
+#output th {
+    background-color: rgba(64, 82, 243, 0.705);
+    color: rgb(255,255,255);
+}
+
+#output tr:nth-child(even) {
+    background-color:rgb(164, 227, 231);
+}
+
+#output tr:nth-child(odd) {
+    background-color: rgb(111, 152, 240)
 }
 
 tr, td {
@@ -16,4 +33,20 @@ tr, td {
 button {
     background: yellow;
     color: black;
+}
+
+.advancedBtn {
+    background-color: rgb(248, 130, 94);
+    border: none;
+    float: left;
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+#loadingMessage {
+    text-align: center;
 }
